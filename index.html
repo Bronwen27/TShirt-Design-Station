@@ -1,12 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-gb">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" /> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> 
+  <title class = "dashboard">Spiral Tree Designs</title>
 </head>
+
 <body>
-    
+  <header class="container-fluid text-center text-white bg-dark p-5 weather-header">
+    <h1 class="title">Spiral Tree Designs</h1>
+    <div id = "time-date"></div>
+  </header>
+
+     <!-- Intro banner -->
+     <div class="jumbotron">
+        <div class="jumboCopy">
+          <h1 class="display-4">Friends of the earth</h1>
+          <p class="lead">Environmentally friendly clothing</p>
+        </div>
+      </div>
+
+<!--Tshirt product cards-->
+  <div class="card-deck">
+    <div class="card">
+      <img class="card-img-top" src="/assets/images/tshirt.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="/assets/images/tshirt.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="/assets/images/tshirt.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-deck">
+    <div class="card">
+      <img class="card-img-top" src="/assets/images/tshirt.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="/assets/images/tshirt.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="/assets/images/tshirt.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+
+  <!--Design your own tshirt container-->
+  <div class="design-your-own">
+    <div class="jumboCopy">
+      <h1 class="display-4">Random quote tshirt generater</h1>
+      <p class="lead">Click button to generate random quote for your tshirt!</p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Generate my quote!</a>
+    </div>
+  </div>
+
+
+
+
+  <!----
+ 
+  <div class="container-fluid" style="max-width: 1400px">
+    <div class="row">
+      <aside class="col-lg-3 pb-3">
+        <h2 id="form-heading" class="mt-1 h3 form-label">
+          Search for a City:
+        </h2>
+        <form id="search-form" class="form">
+          <div class="form-inline form-group">
+            <div class="input-group">
+              <input class="form-input weather-search" type="text" id="search-input" placeholder="London"
+                aria-labelledby="form-heading" aria-controls="today forecast" />
+              <div class="input-group-append">
+                <button type="submit" class="btn search-button" id="search-button" aria-label="submit search">
+                  Search
+                </button>
+                <hr class="hr weather-hr" />
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="list-group" id="history"></div>
+      </aside>
+      <div id ="button-view"></div>
+     
+      <div class="col-lg-9 pb-3">
+        <section id="today" class="mt-3" role="region" aria-live="polite">
+          <div class="card shadow-0 weather-card"></div>
+        </section>
+        <section id="forecast" class="row mt-3" role="region" aria-live="polite"></section>
+      </div>
+
+ 
+<div class = "forecast-row">
+</div>
+
+---------->
+
+  <!--jQuery-->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src ="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- Moment.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  <!-- jQuery Ajax -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src ="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type = "text/javascript" src="assets/script.js"></script>
 </body>
+
 </html>
