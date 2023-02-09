@@ -27,7 +27,7 @@ header {
     background-color:grey;
     background-size: cover;
     background-repeat: no-repeat;
-    height: calc(60vh - 25px);
+    height: calc(70vh - 25px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,15 +44,39 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-left: 70px;
+    padding-left: 50px;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    font-family:algerian;
+  }
+
+  p {
+    font-size: xx-large;
   }
   .quote-card {
     width: 80%;
-    max-width: 700px;
+    max-width: 300px;
   }
   .card-body {
     padding: 40px;
   }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    background-color: black;
+}
+
+.grid-child.purple {
+    background-image: url(/assets/images/Big-Tshirt);
+    background-position: center;
+    position: relative;
+}
+
+
 
 
 
