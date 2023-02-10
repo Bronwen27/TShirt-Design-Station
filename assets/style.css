@@ -6,6 +6,7 @@ header {
     background-image: linear-gradient(10deg,rgb(9, 1, 11), rgba(251, 253, 254, 0.192));
     font-family: CurlZ mt;
     font-size:4rem;
+    background-color: black;
 }
 
 .title {
