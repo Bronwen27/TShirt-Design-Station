@@ -4,7 +4,7 @@ $("#time-date").text(todaysDate);
 
 document.addEventListener("DOMContentLoaded", () => {
     // DOM elements
-    const button = document.querySelector("button");
+    const quoteButton = document.querySelector(".quote-btn");
     const quote = document.querySelector("blockquote p");
     const cite = document.querySelector("blockquote cite");
   
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   
     // Attach an event listener to the `button`
-    button.addEventListener("click", updateQuote);
+    quoteButton.addEventListener("click", updateQuote);
   
     // call updateQuote once when page loads
     updateQuote();
