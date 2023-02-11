@@ -2,6 +2,7 @@
 var todaysDate = moment().format("D MMM YYYY, HH:mm:ss");
 $("#time-date").text(todaysDate);
 
+
 document.addEventListener("DOMContentLoaded", () => {
     // DOM elements
     const quoteButton = document.querySelector(".quote-btn");
