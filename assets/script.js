@@ -32,11 +32,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   
   // trigger event when 'add item' button clicked
-$("#additemsmall").on("click", function(event) {
+$("#small").on("click", function(event) {
 
   event.preventDefault();
   // grab text from the input box
-  var item = $("#a").val();
+  var item = $("small").val();
   // view city in console
   console.log(item)
   //console title city value:
