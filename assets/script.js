@@ -31,31 +31,44 @@ document.addEventListener("DOMContentLoaded", () => {
     updateQuote();
   });
   
-  // trigger event when 'size small' for first shirt button clicked
-$("#small1").on("click", function(event) {
-
-  event.preventDefault();
-  // grab text from the button
- 
-  //console title city value:
-  console.log("Free Hope Tshirt: Size Small");
-  var Small = $("#small1");
-  localStorage.setItem(Small, "Free Hope Tshirt");
-  })
 
 
 
-  // add item to local storage
+  //add item to local storage
 
-//   document.getElementById("small").addEventListener("click", myFunction);
+  document.getElementById("small1").addEventListener("click", myFunction);
 
-// function myFunction() {
-//   localStorage.setItem('myCat', 'Tom');
+function myFunction() {
+  localStorage.setItem('Free Hope Tshirt- Size Small', '£20.00');
 
-//     const cat = localStorage.getItem('myCat');
-//     console.log()
-// }
+    const shirt = localStorage.getItem('Free Hope Tshirt- Size Small', '£20.00');
+    console.log(shirt)
+}
 
+
+document.getElementById("small1").addEventListener("click", myFunction);
+
+function myFunction() {
+  localStorage.setItem('Free Hope Tshirt- Size Small', '£20.00');
+
+    const shirt = localStorage.getItem('Free Hope Tshirt- Size Small', '£20.00');
+    console.log(shirt)
+}
+
+
+
+
+
+
+
+
+
+
+const items = { ...localStorage };
+var shoppingBasket=`
+<div>Items In Shopping Basket</div>
+<p class='shirtItem'>${items}</p>
+`
 
 
 

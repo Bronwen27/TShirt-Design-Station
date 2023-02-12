@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    color: aquamarine;
 }
 
 header {
@@ -143,6 +144,13 @@ header {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.shoppingBasket {
+   color: aqua;
+}
+   
+
+
 
 
 
