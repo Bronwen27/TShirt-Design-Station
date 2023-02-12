@@ -2,6 +2,7 @@
 var todaysDate = moment().format("D MMM YYYY, HH:mm:ss");
 $("#time-date").text(todaysDate);
 
+// create random quote generator button
 
 document.addEventListener("DOMContentLoaded", () => {
     // DOM elements
@@ -30,6 +31,32 @@ document.addEventListener("DOMContentLoaded", () => {
     updateQuote();
   });
   
+  // trigger event when 'add item' button clicked
+$("#additemsmall").on("click", function(event) {
+
+  event.preventDefault();
+  // grab text from the input box
+  var item = $("#a").val();
+  // view city in console
+  console.log(item)
+  //console title city value:
+  console.log("additemsmall:", item);
+  
+  })
+
+  // add item to local storage
+
+//   document.getElementById("small").addEventListener("click", myFunction);
+
+// function myFunction() {
+//   localStorage.setItem('myCat', 'Tom');
+
+//     const cat = localStorage.getItem('myCat');
+//     console.log()
+// }
+
+
+
 
 //API key
 // let APIKey = "d0736665d026d198ed2e5a4eedc5ac57";
