@@ -31,18 +31,19 @@ document.addEventListener("DOMContentLoaded", () => {
     updateQuote();
   });
   
-  // trigger event when 'add item' button clicked
-$("#small").on("click", function(event) {
+  // trigger event when 'size small' for first shirt button clicked
+$("#small1").on("click", function(event) {
 
   event.preventDefault();
-  // grab text from the input box
-  var item = $("small").val();
-  // view city in console
-  console.log(item)
+  // grab text from the button
+ 
   //console title city value:
-  console.log("additemsmall:", item);
-  
+  console.log("Free Hope Tshirt: Size Small");
+  var Small = $("#small1");
+  localStorage.setItem(Small, "Free Hope Tshirt");
   })
+
+
 
   // add item to local storage
 
