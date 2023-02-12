@@ -31,97 +31,104 @@ document.addEventListener("DOMContentLoaded", () => {
     updateQuote();
   });
   
+  document.getElementById("small").addEventListener("click", myFunction);
 
-
-
-  //add first shirt on click button to local storage and console
-
-  document.getElementById("small1").addEventListener("click", myFunction);
-
-function myFunction() {
-  localStorage.setItem('Free Hope Tshirt- Size Small', '£20.00');
-
-    const shirt1Sml = localStorage.getItem('Free Hope Tshirt- Size Small', '£20.00');
-    console.log(shirt1Sml)
-}
-
-
-document.getElementById("medium1").addEventListener("click", myFunction);
-
-function myFunction() {
-  localStorage.setItem('Free Hope Tshirt- Size Medium', '£20.00');
-
-    const shirt1Med = localStorage.getItem('Free Hope Tshirt- Size Medium', '£20.00');
-    console.log(shirt1Med)
-}
-
-document.getElementById("large1").addEventListener("click", myFunction);
-
-function myFunction() {
-  localStorage.setItem('Free Hope Tshirt- Size Large', '£20.00');
-
-    const shirt1Lrg = localStorage.getItem('Free Hope Tshirt- Size Large', '£20.00');
-    console.log(shirt1Lrg)
-}
-
-  //add second shirt on click button to local storage and console
-
-
-  document.getElementById("small2").addEventListener("click", myFunction);
-
-function myFunction() {
-  localStorage.setItem('Down The Rabbit Hole... Tshirt- Size Small', '£20.00');
-
-    const shirt2Sml = localStorage.getItem('Down The Rabbit Hole... Tshirt- Size Small', '£20.00');
-    console.log(shirt2Sml)
-}
-
-document.getElementById("medium2").addEventListener("click", myFunction);
-
-function myFunction() {
-  localStorage.setItem('Down The Rabbit Hole...Tshirt- Size Medium', '£20.00');
-
-    const shirt2Med = localStorage.getItem('Down The Rabbit Hole... Tshirt- Size Medium', '£20.00');
-    console.log(shirt2Med)
-}
-
-document.getElementById("large2").addEventListener("click", myFunction);
-
-function myFunction() {
-  localStorage.setItem('Down The Rabbit Hole...Tshirt- Size Large', '£20.00');
-
-    const shirt2Lrg = localStorage.getItem('Down The Rabbit Hole...- Size Large', '£20.00');
-    console.log(shirt2Lrg)
-}
-
-  //add third shirt on click button to local storage and console
-
-  document.getElementById("small3").addEventListener("click", myFunction);
-
-  function myFunction() {
-    localStorage.setItem('Magestically Awkward Tshirt- Size Small', '£20.00');
+   function myFunction() {
+   localStorage.setItem('Free Hope Tshirt- Size', '£20.00');
   
-      const shirt3Sml = localStorage.getItem('Magestically Awkward Tshirt- Size Small', '£20.00');
-      console.log(shirt3Sml)
+   const shirt = localStorage.getItem('Free Hope Tshirt- Size', '£20.00');
+   console.log(shirt)
   }
 
-  document.getElementById("medium3").addEventListener("click", myFunction);
 
-function myFunction() {
-  localStorage.setItem('Magestically Awkward Tshirt- Size Medium', '£20.00');
+//   //add first shirt on click button to local storage and console
 
-    const shirt3Med = localStorage.getItem('Magestically Awkward Tshirt- Size Medium', '£20.00');
-    console.log(shirt3Med)
-}
+//   document.getElementById("small1").addEventListener("click", myFunction);
 
-document.getElementById("large3").addEventListener("click", myFunction);
+// function myFunction() {
+//   localStorage.setItem('Free Hope Tshirt- Size Small', '£20.00');
 
-function myFunction() {
-  localStorage.setItem('Magestically Awkward Tshirt- Size Large', '£20.00');
+//     const shirt1Sml = localStorage.getItem('Free Hope Tshirt- Size Small', '£20.00');
+//     console.log(shirt1Sml)
+// }
 
-    const shirt3Lrg = localStorage.getItem('Magestically Awkward- Size Large', '£20.00');
-    console.log(shirt3Lrg)
-}
+
+// document.getElementById("medium1").addEventListener("click", myFunction);
+
+// function myFunction() {
+//   localStorage.setItem('Free Hope Tshirt- Size Medium', '£20.00');
+
+//     const shirt1Med = localStorage.getItem('Free Hope Tshirt- Size Medium', '£20.00');
+//     console.log(shirt1Med)
+// }
+
+// document.getElementById("large1").addEventListener("click", myFunction);
+
+// function myFunction() {
+//   localStorage.setItem('Free Hope Tshirt- Size Large', '£20.00');
+
+//     const shirt1Lrg = localStorage.getItem('Free Hope Tshirt- Size Large', '£20.00');
+//     console.log(shirt1Lrg)
+// }
+
+//   //add second shirt on click button to local storage and console
+
+
+//   document.getElementById("small2").addEventListener("click", myFunction);
+
+// function myFunction() {
+//   localStorage.setItem('Down The Rabbit Hole... Tshirt- Size Small', '£20.00');
+
+//     const shirt2Sml = localStorage.getItem('Down The Rabbit Hole... Tshirt- Size Small', '£20.00');
+//     console.log(shirt2Sml)
+// }
+
+// document.getElementById("medium2").addEventListener("click", myFunction);
+
+// function myFunction() {
+//   localStorage.setItem('Down The Rabbit Hole...Tshirt- Size Medium', '£20.00');
+
+//     const shirt2Med = localStorage.getItem('Down The Rabbit Hole... Tshirt- Size Medium', '£20.00');
+//     console.log(shirt2Med)
+// }
+
+// document.getElementById("large2").addEventListener("click", myFunction);
+
+// function myFunction() {
+//   localStorage.setItem('Down The Rabbit Hole...Tshirt- Size Large', '£20.00');
+
+//     const shirt2Lrg = localStorage.getItem('Down The Rabbit Hole...- Size Large', '£20.00');
+//     console.log(shirt2Lrg)
+// }
+
+//   //add third shirt on click button to local storage and console
+
+//   document.getElementById("small3").addEventListener("click", myFunction);
+
+//   function myFunction() {
+//     localStorage.setItem('Magestically Awkward Tshirt- Size Small', '£20.00');
+  
+//       const shirt3Sml = localStorage.getItem('Magestically Awkward Tshirt- Size Small', '£20.00');
+//       console.log(shirt3Sml)
+//   }
+
+//   document.getElementById("medium3").addEventListener("click", myFunction);
+
+// function myFunction() {
+//   localStorage.setItem('Magestically Awkward Tshirt- Size Medium', '£20.00');
+
+//     const shirt3Med = localStorage.getItem('Magestically Awkward Tshirt- Size Medium', '£20.00');
+//     console.log(shirt3Med)
+// }
+
+// document.getElementById("large3").addEventListener("click", myFunction);
+
+// function myFunction() {
+//   localStorage.setItem('Magestically Awkward Tshirt- Size Large', '£20.00');
+
+//     const shirt3Lrg = localStorage.getItem('Magestically Awkward- Size Large', '£20.00');
+//     console.log(shirt3Lrg)
+// }
 
 
 
