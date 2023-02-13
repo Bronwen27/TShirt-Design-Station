@@ -40,10 +40,12 @@ document.addEventListener("DOMContentLoaded", () => {
    function functionOne() {
    localStorage.setItem('Small', '£20.00');
   
-   const shirt = localStorage.getItem('Small', '£20.00');
-   console.log(shirt)
-
-   document.getElementById("basketText").textContent = 'This is dynamically added text';
+   const customSmall = localStorage.getItem('Small', '£20.00');
+   console.log(customSmall)
+  
+   // add shirt to basket at bottom of page
+   document.getElementById("customSinfo").textContent = 'Custom Quote Shirt - Size Small: £20';
+   $('.customS').html($('.blockquote').html())
   }
 
   // medium button
@@ -52,8 +54,11 @@ document.addEventListener("DOMContentLoaded", () => {
   function functionTwo() {
   localStorage.setItem('Medium', '£20.00');
  
-  const shirt = localStorage.getItem('Medium', '£20.00');
-  console.log(shirt)
+  const customMed = localStorage.getItem('Medium', '£20.00');
+  console.log(customMed)
+
+  // add shirt to basket at bottom of page
+  document.getElementById("customM").textContent = 'Custom Quote Shirt- Size Medium: £20';
  }
 
  // large button 
@@ -62,16 +67,19 @@ document.addEventListener("DOMContentLoaded", () => {
  function functionThree() {
  localStorage.setItem('Large', '£20.00');
 
- const shirt = localStorage.getItem('Large', '£20.00');
- console.log(shirt)
+ // add shirt to basket at bottom of page
+ const customLarge = localStorage.getItem('Large', '£20.00');
+ console.log(customLarge)
+
+ document.getElementById("customL").textContent = 'Custom Quote Shirt- Size Large: £20';
 }
 
 
   //add first shirt on click button to local storage and console
 
-  document.getElementById("small1").addEventListener("click", myFunction);
+  document.getElementById("small1").addEventListener("click", functionHopeShirtSmall);
 
-function myFunction() {
+function functionHopeShirtSmall() {
   localStorage.setItem('Free Hope Tshirt- Size Small', '£20.00');
 
     const shirt1Sml = localStorage.getItem('Free Hope Tshirt- Size Small', '£20.00');
