@@ -23,22 +23,46 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(data);
       }
     }
-  
-    // Attach an event listener to the `button`
+
+    // Attach an event listener to the button
     quoteButton.addEventListener("click", updateQuote);
   
     // call updateQuote once when page loads
     updateQuote();
+    console.log(localStorage)
   });
-  
-  document.getElementById("small").addEventListener("click", myFunction);
 
-   function myFunction() {
-   localStorage.setItem('Free Hope Tshirt- Size', '£20.00');
+  // save small, medium and large buttons to local storage
+
+  // small
+  document.getElementById("small").addEventListener("click", functionOne);
+
+   function functionOne() {
+   localStorage.setItem('Small', '£20.00');
   
-   const shirt = localStorage.getItem('Free Hope Tshirt- Size', '£20.00');
+   const shirt = localStorage.getItem('Small', '£20.00');
    console.log(shirt)
   }
+
+  // medium button
+  document.getElementById("medium").addEventListener("click", functionTwo);
+
+  function functionTwo() {
+  localStorage.setItem('Medium', '£20.00');
+ 
+  const shirt = localStorage.getItem('Medium', '£20.00');
+  console.log(shirt)
+ }
+
+ // large button 
+ document.getElementById("large").addEventListener("click", functionThree);
+
+ function functionThree() {
+ localStorage.setItem('Large', '£20.00');
+
+ const shirt = localStorage.getItem('Large', '£20.00');
+ console.log(shirt)
+}
 
 
 //   //add first shirt on click button to local storage and console
