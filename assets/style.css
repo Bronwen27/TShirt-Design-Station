@@ -4,27 +4,26 @@ body {
 }
 
 header {
-   background-image: url(/assets/images/pexels-albin-biju-5800553.jpg);
-   background-size: cover;
-   background-repeat: no-repeat;
+background-color: linear-gradient(180deg,white,black);
    height: calc(30vh - 25px);
    display: flex;
    align-items: center;
    justify-content: center;
     font-family: CurlZ mt;
     font-size:4rem;
-    background-color: black;
     height: calc(40vh - 25px);
-    text-shadow: #73AD21;
+}
+
+.container-fluid {
+  background-color: linear-gradient(180deg,white,black);
 }
 
 .title {
     font-size: 8rem;
 }
 
-
 .jumbotron {
-   background-image: url(/assets/images/pexels-alexey-demidov-10521305.jpg);
+   background-image: url(/assets/images/blackWhiteLeaves.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: calc(40vh - 25px);
@@ -34,20 +33,23 @@ header {
     text-decoration: greenyellow;
   }
 
-  img {
+  img.pull-right {
   border: none;
   width: 300px;
+  height:300px;
+  object-fit: contain;
 }
   
 
 .design-your-own {
-    background-color:grey;
+    background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
-    height: calc(90vh - 25px);
+    height: 1300px;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 1300px;
 }
 
 .card-deck {
@@ -93,15 +95,21 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     background-color: black;
-    height: calc(110vh - 25px);
+    height: 1300px;
+    width: 1300px;
+}
+
+.grid-child.green {
+
 }
 
 .grid-child.purple {
     background-image: url(/assets/images/Big-Tshirt);
+    background-size: 1400px;
     background-position: center;
     position: relative;
-    width:100%;
-    height: calc(90vh - 25px);
+    width: 1300px;
+    height: 1300px;
 }
 
 /* Dropdown Button */
@@ -123,7 +131,7 @@ header {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #47fa41;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -145,5 +153,18 @@ header {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+/* 
+// tutoring  */
+#image-container {
+  display: flex;
+  width: 100%;
+}
 
-   
+img {
+  width:100%;
+}
+
+.orderHeader {
+  background-image: url(/assets/images/pexels-kai-pilger-996329.jpg);
+  height: 300px;
+}
