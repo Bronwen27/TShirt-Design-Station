@@ -129,11 +129,11 @@ function myFunction() {
 function myFunction() {
   localStorage.setItem('Down The Rabbit Hole... Tshirt- Size Small', '£20.00');
 
-    const shirt2Sml = localStorage.getItem('Down The Rabbit Hole... Tshirt- Size Small', '£20.00');
+    const shirt2Sml = localStorage.getItem('Down The Rabbit Hole... Shirt- Size Small', '£20.00');
     console.log(shirt2Sml)
 
     // add to order form at bottom of page
-    document.getElementById("readyMadeTwoS").textContent = 'Down The Rabbit Hole...- Size Small: £20';
+    document.getElementById("readyMadeTwoS").textContent = 'Down The Rabbit Hole...Shirt- Size Small: £20';
 }
 
 //medium2
@@ -142,11 +142,11 @@ document.getElementById("medium2").addEventListener("click", myFunction);
 function myFunction() {
   localStorage.setItem('Down The Rabbit Hole...Tshirt- Size Medium', '£20.00');
 
-    const shirt2Med = localStorage.getItem('Down The Rabbit Hole... Tshirt- Size Medium', '£20.00');
+    const shirt2Med = localStorage.getItem('Down The Rabbit Hole...Shirt- Size Medium', '£20.00');
     console.log(shirt2Med)
 
  // add to order form at bottom of page
- document.getElementById("readyMadeTwoM").textContent = 'Down The Rabbit Hole...- Size Medium: £20';
+ document.getElementById("readyMadeTwoM").textContent = 'Down The Rabbit Hole...Shirt- Size Medium: £20';
 }
 
 
@@ -156,11 +156,11 @@ document.getElementById("large2").addEventListener("click", myFunction);
 function myFunction() {
   localStorage.setItem('Down The Rabbit Hole...Tshirt- Size Large', '£20.00');
 
-    const shirt2Lrg = localStorage.getItem('Down The Rabbit Hole...- Size Large', '£20.00');
+    const shirt2Lrg = localStorage.getItem('Down The Rabbit Hole...Shirt- Size Large', '£20.00');
     console.log(shirt2Lrg)
 
     // add to order form at bottom of page
-    document.getElementById("readyMadeTwoL").textContent = 'Down The Rabbit Hole...- Size Large: £20';
+    document.getElementById("readyMadeTwoL").textContent = 'Down The Rabbit Hole...Shirt- Size Large: £20';
 }
 
   //add third shirt on click button to local storage and console
