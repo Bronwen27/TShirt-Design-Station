@@ -46,7 +46,10 @@ document.addEventListener("DOMContentLoaded", () => {
    // add shirt to basket at bottom of page
    document.getElementById("customSinfo").textContent = 'Custom Quote Shirt - Size Small: £20';
    $('.customS').html($('.blockquote').html())
+
+
   }
+  
 
   // medium button
   document.getElementById("medium").addEventListener("click", functionTwo);
@@ -59,6 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // add shirt to basket at bottom of page
   document.getElementById("customM").textContent = 'Custom Quote Shirt- Size Medium: £20';
+  $('.customS').html($('.blockquote').html())
  }
 
  // large button 
@@ -72,6 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
  console.log(customLarge)
 
  document.getElementById("customL").textContent = 'Custom Quote Shirt- Size Large: £20';
+ $('.customS').html($('.blockquote').html())
 }
 
 
