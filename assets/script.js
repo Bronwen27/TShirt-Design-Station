@@ -38,9 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("small").addEventListener("click", functionOne);
 
    function functionOne() {
-   localStorage.setItem('Small', '£20.00');
+   localStorage.setItem('Small Custom Shirt', '£20.00');
   
-   const customSmall = localStorage.getItem('Small', '£20.00');
+   const customSmall = localStorage.getItem('Small Custom Shirt', '£20.00');
    console.log(customSmall)
   
    // add shirt to basket at bottom of page
@@ -55,33 +55,34 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("medium").addEventListener("click", functionTwo);
 
   function functionTwo() {
-  localStorage.setItem('Medium', '£20.00');
+  localStorage.setItem('Medium Custom Shirt', '£20.00');
  
-  const customMed = localStorage.getItem('Medium', '£20.00');
+  const customMed = localStorage.getItem('Medium Custom Shirt', '£20.00');
   console.log(customMed)
 
   // add shirt to basket at bottom of page
-  document.getElementById("customM").textContent = 'Custom Quote Shirt- Size Medium: £20';
-  $('.customS').html($('.blockquote').html())
+  document.getElementById("customMinfo").textContent = 'Custom Quote Shirt- Size Medium: £20';
+  $('.customM').html($('.blockquote').html())
  }
 
  // large button 
  document.getElementById("large").addEventListener("click", functionThree);
 
  function functionThree() {
- localStorage.setItem('Large', '£20.00');
+ localStorage.setItem('Large Custom Shirt', '£20.00');
 
  // add shirt to basket at bottom of page
- const customLarge = localStorage.getItem('Large', '£20.00');
+ const customLarge = localStorage.getItem('Large Custom Shirt', '£20.00');
  console.log(customLarge)
 
- document.getElementById("customL").textContent = 'Custom Quote Shirt- Size Large: £20';
- $('.customS').html($('.blockquote').html())
+ document.getElementById("customLinfo").textContent = 'Custom Quote Shirt- Size Large: £20';
+ $('.customL').html($('.blockquote').html())
 }
 
 
   //add first shirt on click button to local storage and console
 
+  //small1
   document.getElementById("small1").addEventListener("click", functionHopeShirtSmall);
 
 function functionHopeShirtSmall() {
@@ -89,9 +90,12 @@ function functionHopeShirtSmall() {
 
     const shirt1Sml = localStorage.getItem('Free Hope Tshirt- Size Small', '£20.00');
     console.log(shirt1Sml)
+
+   // add to order form at bottom of page
+    document.getElementById("readyMadeOneS").textContent = 'Free Hope Shirt- Size Small: £20';
 }
 
-
+//medium1
 document.getElementById("medium1").addEventListener("click", myFunction);
 
 function myFunction() {
@@ -99,8 +103,12 @@ function myFunction() {
 
     const shirt1Med = localStorage.getItem('Free Hope Tshirt- Size Medium', '£20.00');
     console.log(shirt1Med)
+    
+     // add to order form at bottom of page
+    document.getElementById("readyMadeOneM").textContent = 'Free Hope Shirt- Size Medium: £20';
 }
 
+//large1
 document.getElementById("large1").addEventListener("click", myFunction);
 
 function myFunction() {
@@ -108,11 +116,14 @@ function myFunction() {
 
     const shirt1Lrg = localStorage.getItem('Free Hope Tshirt- Size Large', '£20.00');
     console.log(shirt1Lrg)
+
+    // add to order form at bottom of page
+    document.getElementById("readyMadeOneL").textContent = 'Free Hope Shirt- Size Large: £20';
 }
 
   //add second shirt on click button to local storage and console
 
-
+//small2
   document.getElementById("small2").addEventListener("click", myFunction);
 
 function myFunction() {
@@ -120,8 +131,12 @@ function myFunction() {
 
     const shirt2Sml = localStorage.getItem('Down The Rabbit Hole... Tshirt- Size Small', '£20.00');
     console.log(shirt2Sml)
+
+    // add to order form at bottom of page
+    document.getElementById("readyMadeTwoS").textContent = 'Down The Rabbit Hole...- Size Small: £20';
 }
 
+//medium2
 document.getElementById("medium2").addEventListener("click", myFunction);
 
 function myFunction() {
@@ -129,8 +144,13 @@ function myFunction() {
 
     const shirt2Med = localStorage.getItem('Down The Rabbit Hole... Tshirt- Size Medium', '£20.00');
     console.log(shirt2Med)
+
+ // add to order form at bottom of page
+ document.getElementById("readyMadeTwoM").textContent = 'Down The Rabbit Hole...- Size Medium: £20';
 }
 
+
+//large2
 document.getElementById("large2").addEventListener("click", myFunction);
 
 function myFunction() {
@@ -138,10 +158,14 @@ function myFunction() {
 
     const shirt2Lrg = localStorage.getItem('Down The Rabbit Hole...- Size Large', '£20.00');
     console.log(shirt2Lrg)
+
+    // add to order form at bottom of page
+    document.getElementById("readyMadeTwoL").textContent = 'Down The Rabbit Hole...- Size Large: £20';
 }
 
   //add third shirt on click button to local storage and console
 
+  //small3
   document.getElementById("small3").addEventListener("click", myFunction);
 
   function myFunction() {
@@ -149,8 +173,12 @@ function myFunction() {
   
       const shirt3Sml = localStorage.getItem('Magestically Awkward Tshirt- Size Small', '£20.00');
       console.log(shirt3Sml)
+
+      // add to order form at bottom of page
+    document.getElementById("readyMadeThreeS").textContent = 'Magestically Awkward Tshirt...- Size Small: £20';
   }
 
+  //medium3
   document.getElementById("medium3").addEventListener("click", myFunction);
 
 function myFunction() {
@@ -158,8 +186,13 @@ function myFunction() {
 
     const shirt3Med = localStorage.getItem('Magestically Awkward Tshirt- Size Medium', '£20.00');
     console.log(shirt3Med)
+
+    
+      // add to order form at bottom of page
+      document.getElementById("readyMadeThreeM").textContent = 'Magestically Awkward Tshirt...- Size Medium: £20';
 }
 
+//large3
 document.getElementById("large3").addEventListener("click", myFunction);
 
 function myFunction() {
@@ -167,6 +200,10 @@ function myFunction() {
 
     const shirt3Lrg = localStorage.getItem('Magestically Awkward- Size Large', '£20.00');
     console.log(shirt3Lrg)
+
+    
+      // add to order form at bottom of page
+      document.getElementById("readyMadeThreeL").textContent = 'Magestically Awkward Tshirt...- Size Large: £20';
 }
 
 
