@@ -145,7 +145,7 @@ h3, a {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #47fa41;
+    background-color: #070907;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -157,17 +157,29 @@ h3, a {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    background-color: #19f1cd;
+    background-image: linear-gradient(to right, #010808 0%, #5fa5f6 51% , #55f791 100%);
+    border-radius: 30px;
+
   }
 
   /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-position: right left;
+  background: linear-gradient(to right, aqua, rgb(23, 207, 29), rgb(22, 25, 19));
+}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-position: right ;
+ 
+}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #0fe4c8;}
+.dropdown:hover .dropbtn {
+  background: linear-gradient(to right, aqua, rgb(23, 207, 29), rgb(22, 25, 19));
+
+}
 /* 
 // tutoring  */
 #image-container {
@@ -209,6 +221,14 @@ button {
   border: none;
   width:200px;
   margin:auto;
-  border-radius: 30px;;
+  border-radius: 30px;
+  background-image: linear-gradient(to right, #010808 0%, #5fa5f6 51% , #55f791 100%);
+}
 
+button.quote-btn {
+  background-image: linear-gradient(to right, #0a0611 0%, #c36df9 51%, #55f791 100%);
+}
+
+button:hover {
+  background: linear-gradient(to right, aqua, rgb(23, 207, 29), rgb(22, 25, 19));
 }
