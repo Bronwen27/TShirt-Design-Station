@@ -216,20 +216,20 @@ function displayImages() {
   const images = [
     {
       id: 1,
-      title: 'shirt 1',
-      description: 'this is first img',
+      title: '"Free Hope" Design Tee',
+      description: '100% Cotton',
       filename: 'tshirt.png'
     },
     {
       id: 2,
-      title: 'shirt 2',
-      description: 'this is 2nd img',
+      title: '"Down The Rabbit Hole..." Design Tee',
+      description: '100% Cotton',
       filename: 'tshirt.png'
     },
     {
       id: 3,
-      title: 'shirt 3',
-      description: 'this is 3rd img',
+      title: '"Magestically Awkward" Design Tee',
+      description: '100% Cotton',
       filename: 'tshirt.png'
     }
   ]
