@@ -37,8 +37,8 @@ header {
 
   img.pull-right {
   border: none;
-  width: 300px;
-  height:300px;
+  width: 200px;
+  height:200px;
   object-fit: contain;
 }
   
@@ -47,11 +47,13 @@ header {
     background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 1300px;
+    height: 800px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1300px;
+    width: 800px;
+    max-width: fit-content;
+    text-align: center;
 }
 /* card deck of ready made tshirts */
 .card-deck {
@@ -104,22 +106,24 @@ h3, a {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     background-color: black;
-    height: 1300px;
-    width: 130px;
+    height: 800px;
+    width: 800px;
     min-height: 100%; 
+    max-width: fit-content;
 }
 
 .grid-child.purple {
     background-image: url(/assets/images/Big-Tshirt);
-    background-size: 1400px;
+    background-size: 900px;
     background-position: center;
     position: relative;
-    width: 1300px;
-    height: 1300px;
+    width: 800px;
+    height: 800px;
 }
 
 .grid-child.green {
-  width: 100%
+  width: 200px;
+  max-width: fit;
 }
 
 .blockquote-footer {
