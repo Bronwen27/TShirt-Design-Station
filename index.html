@@ -8,12 +8,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" /> 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> 
   <link rel="stylesheet" href="assets/style.css" />
-  <title class = "dashboard">Spiral Tree Designs</title>
+  <title class = "dashboard">Quote Tree Designs</title>
 </head>
 
 <body>
   <header class="container-fluid text-center text-white" style="background-color: linear-gradient(180deg, white, black);">
-    <h1 class="title">Spiral Tree Designs</h1>
+    <h1 class="title">Quote Tree Designs</h1>
     <img src="/assets/images/ecoWoman.tmp" alt="eco-woman" class= "pull-right">
   </header>
 
@@ -110,23 +110,63 @@
         </div>
     </div>
 <!--Design Order Form-->
-    <section class="orderHeader">Selected Design Order <span id="time-date"></span></section>
+    <section class="orderHeader">
+      <p class="savedDeisgns"> Saved Designs</p> <span id="time-date"></span></section>
 
     <container class="basket">
       <!--Custom Shirts-->
       <div class="customS" id="customS"></div>
-      <P id="customSinfo"></P>
+      <P class ="customSinfo" id="customSinfo"></P>
       <div class="customM" id="customM"></div>
-      <P id="customMinfo"></P>
+      <P class="customMinfo" id="customMinfo"></P>
       <div class="customL" id="customL"></div>
-      <P id="customLinfo"></P>
+      <P class="customLinfo" id="customLinfo"><button id="viewSaved"></button></P>
     </container>
 
      <!--Ready Made Shirt One-->
-     <container class="id" id="savedItems">
+     <container class="savedItems" id="savedItems">
+      </container>
 
-     </container>
+ <!--Next Tshirt-
+ <div class="grid-container">
 
+  <div class="grid-child purple">
+    <div class="quote-card">
+                
+    <blockquote class="blockquote mb-0">
+      <div>Ready to generate...</div>
+      <footer class="blockquote-footer">
+        <cite title="Source Title"></cite>
+      </footer>
+    </blockquote>
+   </div>
+  </div>
+
+   <div class="grid-child green">
+    <div class="design-your-own">
+     <div class="jumboCopy">
+        <h1 class="display-4">Random quote tshirt generater</h1>
+          <p class="lead">Click button to generate random quote for your tshirt!</p>
+          <form class="form-inline">
+            <div class="form-group mb-2"></div>
+            <div class="form-group mx-sm-3 mb-2">
+              <input type="password" class="form-control" id="inputPassword2" placeholder="Boy/Girl/Neutral">
+            </div>
+            <button type="submit" class="name-btn btn-primary mb-2">Generate Name!</button>
+          </form>
+          <div class="dropdown">
+           <button class="dropbtn">Add To Basket</button>
+            <div class="dropdown-content">
+              <a id="small" href="#">Small</a>
+              <a id="medium" href="#">Medium</a>
+              <a id="large" href="#">Large</a>
+             </div>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+   --->
 
   <!--jQuery-->
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>

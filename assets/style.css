@@ -1,25 +1,27 @@
 body {
     background-color: black;
-    color: #04AA6D;
+    color: #22ca8c;
 }
 
 header {
-background-color: linear-gradient(180deg,white,black);
    height: calc(30vh - 25px);
    display: flex;
    align-items: center;
    justify-content: center;
-    font-family: CurlZ mt;
-    font-size:4rem;
-    height: calc(40vh - 25px);
-}
-
-.container-fluid {
-  background-color: linear-gradient(180deg,white,black);
+   font-family: CurlZ mt;
+   font-size:4rem;
 }
 
 .title {
     font-size: 8rem;
+}
+
+#time-date {
+  color: aqua;
+}
+
+.orderHeader {
+  font-size: xx-large;
 }
 
 .jumbotron {
@@ -51,13 +53,20 @@ background-color: linear-gradient(180deg,white,black);
     justify-content: center;
     width: 1300px;
 }
-
+/* card deck of ready made tshirts */
 .card-deck {
     background-color: black;
 }
 
+h3, a {
+  background-color: black;
+  text-align: center;
+  font-size: xx-large;
+}
+
 .card {
     border: none;
+    background-color: black;
 }
 
 /* the design-your-own quote section */
@@ -96,11 +105,8 @@ background-color: linear-gradient(180deg,white,black);
     grid-gap: 20px;
     background-color: black;
     height: 1300px;
-    width: 1300px;
-}
-
-.grid-child.green {
-
+    width: 130px;
+    min-height: 100%; 
 }
 
 .grid-child.purple {
@@ -110,6 +116,14 @@ background-color: linear-gradient(180deg,white,black);
     position: relative;
     width: 1300px;
     height: 1300px;
+}
+
+.grid-child.green {
+  width: 100%
+}
+
+.blockquote-footer {
+  font-size: x-large;
 }
 
 /* Dropdown Button */
@@ -143,6 +157,7 @@ background-color: linear-gradient(180deg,white,black);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    background-color: #19f1cd;
   }
 
   /* Change color of dropdown links on hover */
@@ -152,7 +167,7 @@ background-color: linear-gradient(180deg,white,black);
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: #0fe4c8;}
 /* 
 // tutoring  */
 #image-container {
@@ -165,6 +180,35 @@ img {
 }
 
 .orderHeader {
-  background-image: url(/assets/images/pexels-kai-pilger-996329.jpg);
   height: 300px;
+  text-align: center;
+
+}
+
+.saveDesigns {
+  font-size: xxx-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.basket {
+color: aqua;
+position: absolute;
+left: 150px;  
+width: 1000px;
+height: 120px;
+
+}
+
+button {
+  background-color: #04AA6D;
+  text-align: center;
+  color: white;
+  padding: 16px;
+  font-size: 30px;
+  border: none;
+  width:200px;
+  margin:auto;
+  border-radius: 30px;;
+
 }
