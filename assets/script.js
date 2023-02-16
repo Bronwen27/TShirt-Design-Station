@@ -249,7 +249,7 @@ function displayImages() {
     $("").addClass("saveShirt");
 
     const button = document.createElement('button')
-    button.innerText = 'save to list'
+    button.innerText = 'Favourite'
 
     button.addEventListener('click', function() {
       localStorage.setItem('Shirt:' + images[index].id, images[index].filename)
