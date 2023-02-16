@@ -12,6 +12,10 @@ header {
    font-size:4rem;
 }
 
+.navbar {
+  background-image: url(/assets/images/tarmac.jpg);
+}
+
 .title {
     font-size: 8rem;
 }
@@ -104,7 +108,7 @@ h3, a {
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 80px;
     background-color: black;
     height: 800px;
     width: 800px;
@@ -184,6 +188,11 @@ h3, a {
   background: linear-gradient(to right, aqua, rgb(23, 207, 29), rgb(22, 25, 19));
 
 }
+
+.jumboCopyTwo {
+  padding-left: 50px;
+  
+}
 /* 
 // tutoring  */
 #image-container {
@@ -193,6 +202,7 @@ h3, a {
 
 img {
   width:100%;
+  border-radius: 100px;
 }
 
 .orderHeader {
