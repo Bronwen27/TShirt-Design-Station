@@ -254,9 +254,21 @@ function displayImages() {
     button.addEventListener('click', function() {
       localStorage.setItem('Shirt:' + images[index].id, images[index].filename)
       
-    
-    document.getElementById("savedItems").innerHTML = 'hub jub tim';
-      $('.saveShirt').html($('.saveShirt').html())
+    const savedItems = document.getElementById('savedItems');
+
+    const item = document.createElement('div');
+    item.classList.add('saved-item');
+
+    const title = document.createElement('h3');
+    title.innerText = images[index].title;
+    item.appendChild(title);
+
+    const description = document.createElement('p');
+    description.innerText = images[index].description;
+    item.appendChild(description);
+
+    savedItems.appendChild(item);
+   
      })
     card.appendChild(button)
     imageCointainer.appendChild(card)
