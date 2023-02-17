@@ -254,8 +254,9 @@ function displayImages() {
     button.addEventListener('click', function() {
       localStorage.setItem('Shirt:' + images[index].id, images[index].filename)
       
-    // document.getElementById("savedItems").textContent = 'Custom Quote Shirt- Size Large: £20';
-    //   $('.saveShirt').html($('.saveShirt').html())
+    
+    document.getElementById("savedItems").innerHTML = 'hub jub tim';
+      $('.saveShirt').html($('.saveShirt').html())
      })
     card.appendChild(button)
     imageCointainer.appendChild(card)
@@ -264,6 +265,20 @@ function displayImages() {
 }
 
 displayImages()
+
+
+function printData() {
+  // Array containing data to be printed
+  const data = ['apple', 'banana', 'orange', 'grape'];
+
+  // Get a reference to the output div
+  const outputDiv = document.getElementById('output');
+
+  // Loop through the array and print each item in a new line
+  for (let i = 0; i < data.length; i++) {
+    outputDiv.innerHTML += data[i] + '<br>';
+  }
+}
 
 // write a function that gets the above saved item from local storage and adds it to array
 // create html element for saved list (like we did on line image-container)
