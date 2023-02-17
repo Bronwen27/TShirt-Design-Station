@@ -308,33 +308,43 @@ save()
 
 
 
-// wordcloud api tshirt
-
+// advice custom api tshirt
 
 // document.addEventListener("DOMContent", () => {
 //   // DOM elements
-//   const quoteButtonTwo = document.querySelector(".name-btn");
-//   const quote = document.querySelector("blockquote div");
-//   var apiKey = 
+//   const adviceButton = document.querySelector(".advice-btn");
+//   const advice = document.querySelector(".adviceReady");
+//   const citeAdvice = document.querySelector(".citeAdvice");
 
-//   async function updateQuote() {
+//   async function updateAdvice() {
 //     // Fetch a random quote from the Quotable API
-//     const response = await fetch("https://api.quotable.io/random?maxLength=80");
-//     const data = await response.json();
-//     if (response.ok) {
+//     const responses = await fetch("https://api.adviceslip.com/advice");
+//     const datas = await responses.json();
+//     if (responses.ok) {
 //       // Update DOM elements
-//       quote.textContent = data.content;
-//       cite.textContent = data.author;
+//       advice.textContent = datas.content;
+//       citeAdvice.textContent = datas.author;
 //     } else {
-//       quote.textContent = "An error occured";
-//       console.log(data);
+//       advice.textContent = "An error occured";
+//       console.log(datas);
 //     }
 //   }
 
 //   // Attach an event listener to the button
-//   quoteButtonTwo.addEventListener("click", updateQuote);
+//   adviceButton.addEventListener("click", updateAdvice);
 
 //   // call updateQuote once when page loads
-//   updateQuote();
+//   updateAdvice();
 //   console.log(localStorage)
 // });
+
+
+// async function generate() {
+//   const res = await fetch("https://api.adviceslip.com/advice");
+//   const data = await res.json();
+//   document.querySelector(".adviceReady").innerText = '"' + data.slip.advice + '"';
+// }
+// document.querySelector('button.advice-btn').onclick = () => {
+//   generate();
+// }
+
