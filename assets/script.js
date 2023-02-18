@@ -90,19 +90,19 @@ function displayImages() {
       id: 1,
       title: '"Free Hope" Design Tee',
       description: '100% Cotton',
-      filename: 'tshirt.png'
+      filename: 'freeHopeShirt.jpg'
     },
     {
       id: 2,
       title: '"Down The Rabbit Hole..." Design Tee',
       description: '100% Cotton',
-      filename: 'tshirt.png'
+      filename: 'downRabbitHoleShirt.jpg'
     },
     {
       id: 3,
       title: '"Magestically Awkward" Design Tee',
       description: '100% Cotton',
-      filename: 'tshirt.png'
+      filename: 'awkwardShirt.jpg'
     }
   ]
 
