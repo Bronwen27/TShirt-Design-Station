@@ -57,14 +57,13 @@ header {
     grid-template-columns: auto auto auto;
     max-width: 1000px;
 }
+
+.lead {
+  font-size: 30px;
+}
 /* card deck of ready made tshirts */
 .card-deck {
     background-color: black;
-}
-
-a {
-  text-align: left;
-  font-size: large;
 }
 
 h3 {
@@ -76,6 +75,7 @@ h3 {
 .card {
     border: none;
     background-color: black;
+    font-size: larger;
 }
 
 /* the design-your-own quote section */
@@ -256,12 +256,32 @@ button:hover {
 }
 
 .basket {
-  text-align: left;
+  text-align: center;
 }
 
- h3, h4 {
-  text-align: left;
+h3 {
+  text-align: center;
   padding-right: 100px;
+  font-size: 40px;
+}
+
+ h4 {
+  text-align: center;
+  padding-right: 100px;
+  font-size: 30px;
+}
+
+a {
+  text-align: center;
+  font-size: 40px;
+}
+
+.saved-item {
+  font-size: large;
+}
+
+.customSinfo {
+  font-size: xx-large;
 }
 
 

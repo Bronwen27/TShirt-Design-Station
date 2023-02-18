@@ -47,7 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
    document.getElementById("customSinfo").textContent = 'Custom Quote Shirt - Size Small: £' + (25);
    $('.customS').html($('.blockquote').html());
 
-
   }
   
 
