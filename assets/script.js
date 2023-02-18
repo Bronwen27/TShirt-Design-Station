@@ -150,6 +150,35 @@ function displayImages() {
 
 displayImages()
 
+// Advice API call Shirts
+
+document.addEventListener("DOMContentLoaded", () => {
+  // DOM elements
+  const adviceButton = document.querySelector(".advice-btn");
+  const advice = document.querySelector(".adviceReady");
+
+  async function updateAdvice() {
+    // Fetch a random quote from the Advice Slip API
+    const responseTwo = await fetch("https://api.adviceslip.com/advice");
+    const dataTwo = await responseTwo.json();
+    if (responseTwo.ok) {
+      // Update DOM elements
+      advice.textContent = dataTwo.slip.advice;
+    } else {
+      advice.textContent = "An error occurred";
+      console.log(dataTwo);
+    }
+  }
+
+  // Attach an event listener to the button
+  adviceButton.addEventListener("click", updateAdvice);
+
+  // Call updateAdvice once when page loads
+  updateAdvice();
+  console.log(localStorage);
+});
+
+
 
 
 
