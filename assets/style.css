@@ -62,7 +62,12 @@ header {
     background-color: black;
 }
 
-h3, a {
+a {
+  text-align: left;
+  font-size: large;
+}
+
+h3 {
   background-color: black;
   text-align: center;
   font-size: xx-large;
@@ -255,7 +260,7 @@ button:hover {
 }
 
  h3, h4 {
-  text-align: right;
+  text-align: left;
   padding-right: 100px;
 }
 

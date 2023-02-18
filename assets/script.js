@@ -90,19 +90,22 @@ function displayImages() {
       id: 1,
       title: '"Free Hope" Design Tee',
       description: '100% Cotton',
-      filename: 'freeHopeShirt.jpg'
+      filename: 'freeHopeShirt.jpg',
+      price: 20
     },
     {
       id: 2,
       title: '"Down The Rabbit Hole..." Design Tee',
       description: '100% Cotton',
-      filename: 'downRabbitHoleShirt.jpg'
+      filename: 'downRabbitHoleShirt.jpg',
+      price: 20
     },
     {
       id: 3,
       title: '"Magestically Awkward" Design Tee',
       description: '100% Cotton',
-      filename: 'awkwardShirt.jpg'
+      filename: 'awkwardShirt.jpg',
+      price: 20
     }
   ]
 
@@ -115,10 +118,15 @@ function displayImages() {
     const title = document.createElement('h3')
     title.innerText = images[index].title;
     card.appendChild(title)
-    const description = document.createElement('a')
+    const description = document.createElement('h4')
     description.innerText = images[index].description;
     card.appendChild(description)
     $("").addClass("saveShirt");
+    const price = document.createElement('a')
+    price.innerText = '£' + images[index].price;
+    card.appendChild(price)
+    card.classList.add("saveShirt");
+    imageCointainer.appendChild(card);
 
     const button = document.createElement('button')
     button.innerText = 'Favourite'
@@ -138,6 +146,10 @@ function displayImages() {
     const description = document.createElement('h4');
     description.innerText = images[index].description;
     item.appendChild(description);
+
+    const price = document.createElement('a');
+    price.innerText = images[index].price;
+    item.appendChild(price);
 
     savedItems.appendChild(item);
    
