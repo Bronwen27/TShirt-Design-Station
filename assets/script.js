@@ -38,14 +38,14 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("small").addEventListener("click", functionOne);
 
    function functionOne() {
-   localStorage.setItem('Small Custom Shirt', '£20.00');
+   localStorage.setItem('Small Custom Shirt', '£25.00');
   
-   const customSmall = localStorage.getItem('Small Custom Shirt', '£20.00');
+   const customSmall = localStorage.getItem('Small Custom Shirt', '£25.00');
    console.log(customSmall)
   
    // add shirt to basket at bottom of page
-   document.getElementById("customSinfo").textContent = 'Custom Quote Shirt - Size Small: £20';
-   $('.customS').html($('.blockquote').html())
+   document.getElementById("customSinfo").textContent = 'Custom Quote Shirt - Size Small: £' + (25);
+   $('.customS').html($('.blockquote').html());
 
 
   }
@@ -55,13 +55,13 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("medium").addEventListener("click", functionTwo);
 
   function functionTwo() {
-  localStorage.setItem('Medium Custom Shirt', '£20.00');
+  localStorage.setItem('Medium Custom Shirt', '£25.00');
  
-  const customMed = localStorage.getItem('Medium Custom Shirt', '£20.00');
+  const customMed = localStorage.getItem('Medium Custom Shirt', '£25.00');
   console.log(customMed)
 
   // add shirt to basket at bottom of page
-  document.getElementById("customMinfo").textContent = 'Custom Quote Shirt- Size Medium: £20';
+  document.getElementById("customMinfo").textContent = 'Custom Quote Shirt- Size Medium: £' + (25);
   $('.customM').html($('.blockquote').html())
  }
 
@@ -69,13 +69,13 @@ document.addEventListener("DOMContentLoaded", () => {
  document.getElementById("large").addEventListener("click", functionThree);
 
  function functionThree() {
- localStorage.setItem('Large Custom Shirt', '£20.00');
+ localStorage.setItem('Large Custom Shirt', '£25.00');
 
  // add shirt to basket at bottom of page
- const customLarge = localStorage.getItem('Large Custom Shirt', '£20.00');
+ const customLarge = localStorage.getItem('Large Custom Shirt', '£25.00');
  console.log(customLarge)
 
- document.getElementById("customLinfo").textContent = 'Custom Quote Shirt- Size Large: £20';
+ document.getElementById("customLinfo").textContent = 'Custom Quote Shirt- Size Large: £' + (25);
  $('.customL').html($('.blockquote').html())
 }
 
@@ -195,13 +195,13 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("smallAdvice").addEventListener("click", functionAdviceOne);
 
    function functionAdviceOne() {
-   localStorage.setItem('Small Custom Shirt', '£20.00');
+   localStorage.setItem('Small Custom Shirt', '£25.00');
   
-   const customAdviceSmall = localStorage.getItem('Small Custom Shirt', '£20.00');
+   const customAdviceSmall = localStorage.getItem('Small Custom Shirt', '£25.00');
    console.log(customAdviceSmall)
   
    // add shirt to basket at bottom of page
-   document.getElementById("customAdviceSinfo").textContent = 'Custom Quote Shirt - Size Small: £20';
+   document.getElementById("customAdviceSinfo").textContent = 'Custom Quote Shirt - Size Small: £' + (25);
    $('.customAdviceS').html($('.blockAdvice').html())
 
 
@@ -212,13 +212,13 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("mediumAdvice").addEventListener("click", functionAdviceTwo);
 
   function functionAdviceTwo() {
-  localStorage.setItem('Medium Custom Shirt', '£20.00');
+  localStorage.setItem('Medium Custom Shirt', '£25.00');
  
-  const customAdviceMed = localStorage.getItem('Medium Custom Shirt', '£20.00');
+  const customAdviceMed = localStorage.getItem('Medium Custom Shirt', '£25.00');
   console.log(customAdviceMed)
 
   // add shirt to basket at bottom of page
-  document.getElementById("customAdviceMinfo").textContent = 'Custom Quote Shirt- Size Medium: £20';
+  document.getElementById("customAdviceMinfo").textContent = 'Custom Quote Shirt- Size Medium: £' + (25);
   $('.customAdviceM').html($('.blockAdvice').html())
  }
 
@@ -226,13 +226,13 @@ document.addEventListener("DOMContentLoaded", () => {
  document.getElementById("largeAdvice").addEventListener("click", functionAdviceThree);
 
  function functionAdviceThree() {
- localStorage.setItem('Large Custom Shirt', '£20.00');
+ localStorage.setItem('Large Custom Shirt', '£25.00');
 
  // add shirt to basket at bottom of page
- const customAdviceLarge = localStorage.getItem('Large Custom Shirt', '£20.00');
+ const customAdviceLarge = localStorage.getItem('Large Custom Shirt', '£25.00');
  console.log(customAdviceLarge)
 
- document.getElementById("customAdviceLinfo").textContent = 'Custom Quote Shirt- Size Large: £20';
+ document.getElementById("customAdviceLinfo").textContent = 'Custom Quote Shirt- Size Large: £' + (25);
  $('.customAdviceL').html($('.blockAdvice').html())
 }
 
