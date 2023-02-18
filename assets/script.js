@@ -179,6 +179,52 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+  // custom shirt small button
+  document.getElementById("smallAdvice").addEventListener("click", functionAdviceOne);
+
+   function functionAdviceOne() {
+   localStorage.setItem('Small Custom Shirt', '£20.00');
+  
+   const customAdviceSmall = localStorage.getItem('Small Custom Shirt', '£20.00');
+   console.log(customAdviceSmall)
+  
+   // add shirt to basket at bottom of page
+   document.getElementById("customAdviceSinfo").textContent = 'Custom Quote Shirt - Size Small: £20';
+   $('.customAdviceS').html($('.blockAdvice').html())
+
+
+  }
+  
+
+  // custom shirt medium button
+  document.getElementById("mediumAdvice").addEventListener("click", functionAdviceTwo);
+
+  function functionAdviceTwo() {
+  localStorage.setItem('Medium Custom Shirt', '£20.00');
+ 
+  const customAdviceMed = localStorage.getItem('Medium Custom Shirt', '£20.00');
+  console.log(customAdviceMed)
+
+  // add shirt to basket at bottom of page
+  document.getElementById("customAdviceMinfo").textContent = 'Custom Quote Shirt- Size Medium: £20';
+  $('.customAdviceM').html($('.blockAdvice').html())
+ }
+
+ // custom shirt large button 
+ document.getElementById("largeAdvice").addEventListener("click", functionAdviceThree);
+
+ function functionAdviceThree() {
+ localStorage.setItem('Large Custom Shirt', '£20.00');
+
+ // add shirt to basket at bottom of page
+ const customAdviceLarge = localStorage.getItem('Large Custom Shirt', '£20.00');
+ console.log(customAdviceLarge)
+
+ document.getElementById("customAdviceLinfo").textContent = 'Custom Quote Shirt- Size Large: £20';
+ $('.customAdviceL').html($('.blockAdvice').html())
+}
+
+
 
 
 
