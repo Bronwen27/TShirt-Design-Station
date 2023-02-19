@@ -289,7 +289,7 @@ header {
     background-color: #04AA6D;
     color: white;
     padding: 16px;
-    font-size: 16px;
+    font-size: 30px;
     border: none;
   }
   
@@ -389,8 +389,9 @@ button {
   background-image: linear-gradient(to right, #010808 0%, #5fa5f6 51% , #55f791 100%);
 }
 
-button.quote-btn {
+button.quote-btn, .advice-btn {
   background-image: linear-gradient(to right, #0a0611 0%, #c36df9 51%, #55f791 100%);
+ font-size: 35px;
 }
 
 button:hover {
