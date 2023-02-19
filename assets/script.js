@@ -38,9 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("small").addEventListener("click", functionOne);
 
    function functionOne() {
-   localStorage.setItem('Small Custom Shirt', '£25.00');
+   localStorage.setItem('Custom Quote Shirt - Size Small', '£25.00');
   
-   const customSmall = localStorage.getItem('Small Custom Shirt', '£25.00');
+   const customSmall = localStorage.getItem('Custom Quote Shirt - Size Small', '£25.00');
    console.log(customSmall)
   
    // add shirt to basket at bottom of page
@@ -54,9 +54,9 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("medium").addEventListener("click", functionTwo);
 
   function functionTwo() {
-  localStorage.setItem('Medium Custom Shirt', '£25.00');
+  localStorage.setItem('Custom Quote Shirt - Size Med', '£25.00');
  
-  const customMed = localStorage.getItem('Medium Custom Shirt', '£25.00');
+  const customMed = localStorage.getItem('Custom Quote Shirt - Size Med', '£25.00');
   console.log(customMed)
 
   // add shirt to basket at bottom of page
@@ -68,10 +68,10 @@ document.addEventListener("DOMContentLoaded", () => {
  document.getElementById("large").addEventListener("click", functionThree);
 
  function functionThree() {
- localStorage.setItem('Large Custom Shirt', '£25.00');
+ localStorage.setItem('Custom Quote Shirt - Size Lrg', '£25.00');
 
  // add shirt to basket at bottom of page
- const customLarge = localStorage.getItem('Large Custom Shirt', '£25.00');
+ const customLarge = localStorage.getItem('Custom Quote Shirt - Size Lrg', '£25.00');
  console.log(customLarge)
 
  document.getElementById("customLinfo").textContent = 'Custom Quote Shirt- Size Large: £' + (25);
@@ -131,7 +131,7 @@ function displayImages() {
     button.innerText = 'Favourite'
 
     button.addEventListener('click', function() {
-      localStorage.setItem('Shirt:' + images[index].id, images[index].filename)
+      localStorage.setItem('Shirt:' + images[index].id, images[index].price)
       
     const savedItems = document.getElementById('savedItems');
 
@@ -194,10 +194,10 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("smallAdvice").addEventListener("click", functionAdviceOne);
 
    function functionAdviceOne() {
-   localStorage.setItem('Small Custom Shirt', '£25.00');
+   localStorage.setItem('Custom Advice Shirt - Size Small', '£25.00');
   
-   const customAdviceSmall = localStorage.getItem('Small Custom Shirt', '£25.00');
-   console.log(customAdviceSmall)
+   const customAdviceSmall = localStorage.getItem('Custom Advice Shirt - Size Small', '£25.00');
+   console.log(customAdviceSmall);
   
    // add shirt to basket at bottom of page
    document.getElementById("customAdviceSinfo").textContent = 'Custom Quote Shirt - Size Small: £' + (25);
@@ -211,9 +211,9 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("mediumAdvice").addEventListener("click", functionAdviceTwo);
 
   function functionAdviceTwo() {
-  localStorage.setItem('Medium Custom Shirt', '£25.00');
+  localStorage.setItem('Custom Advice Shirt - Size Med', '£25.00');
  
-  const customAdviceMed = localStorage.getItem('Medium Custom Shirt', '£25.00');
+  const customAdviceMed = localStorage.getItem('Custom Advice Shirt - Size Med', '£25.00');
   console.log(customAdviceMed)
 
   // add shirt to basket at bottom of page
@@ -225,17 +225,37 @@ document.addEventListener("DOMContentLoaded", () => {
  document.getElementById("largeAdvice").addEventListener("click", functionAdviceThree);
 
  function functionAdviceThree() {
- localStorage.setItem('Large Custom Shirt', '£25.00');
+ localStorage.setItem('Custom Advice Shirt - Size Lrg', '£25.00');
 
  // add shirt to basket at bottom of page
- const customAdviceLarge = localStorage.getItem('Large Custom Shirt', '£25.00');
+ const customAdviceLarge = localStorage.getItem('Custom Advice Shirt - Size Lrg', '£25.00');
  console.log(customAdviceLarge)
 
  document.getElementById("customAdviceLinfo").textContent = 'Custom Quote Shirt- Size Large: £' + (25);
  $('.customAdviceL').html($('.blockAdvice').html())
 }
 
+// calculate total
 
+function calculateTotal() {
+  let total = 0;
+
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    const value = localStorage.getItem(key);
+
+    if (value.includes('£')) {
+      const price = Number(value.replace('£', ''));
+      total += price;
+    }
+  }
+
+  const totalElement = document.getElementById('total');
+  totalElement.textContent = `Total: £${total}`;
+}
+
+// call the function to calculate and display the total
+calculateTotal();
 
 
 
