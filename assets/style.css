@@ -3,6 +3,12 @@ body {
     color: #22ca8c;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 header {
    height: calc(30vh - 25px);
    display: flex;
@@ -36,8 +42,43 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: greenyellow;
   }
+
+  .bannerHeader {
+    color: hsl(0, 0%, 28%);
+  font-size: 80px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 64px;
+  background: linear-gradient(to right, hsl(0, 0%, 30%) 0, hsl(0, 0%, 100%) 10%, hsl(0, 0%, 30%) 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 600px;
+  }
+}
+
+.with {
+  font-size: 50px;
+  text-align: center;
+  height: 200px;
+  padding-right: 30px;
+  color: rgb(182, 182, 182);
+}
+  
 
   img.pull-right {
   border: none;
