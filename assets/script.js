@@ -128,7 +128,8 @@ function displayImages() {
     imageCointainer.appendChild(card);
 
     const button = document.createElement('button')
-    button.innerText = 'Favourite'
+    button.innerText = 'Favourite';
+    button.setAttribute('id', 'buttonReadyMade');
 
     button.addEventListener('click', function() {
       localStorage.setItem('Shirt:' + images[index].id, '£' + images[index].price)
@@ -237,3 +238,50 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // calculate total
 
+let total = 0;
+
+// Get references to the buttons and the total display element
+var buttonReadyMade = document.getElementById('buttonReadyMade');
+var buttonCustomQuoteSmall = document.getElementById('small');
+var buttonCustomQuoteMed = document.getElementById('medium');
+var buttonCustomQuoteLarge = document.getElementById('large');
+var buttonCustomAdviceSmall = document.getElementById('smallAdvice');
+var buttonCustomAdviceMed = document.getElementById('mediumAdvice');
+var buttonCustomAdviceLarge = document.getElementById('largeAdvice');
+
+// Add event listeners to the buttons
+buttonReadyMade.addEventListener('click', () => {
+  total += 20;
+  updateTotalDisplay();
+});
+buttonCustomQuoteSmall.addEventListener('click', () => {
+  total += 25;
+  updateTotalDisplay();
+});
+buttonCustomQuoteMed.addEventListener('click', () => {
+  total += 25;
+  updateTotalDisplay();
+});
+buttonCustomQuoteLarge.addEventListener('click', () => {
+  total += 25;
+  updateTotalDisplay();
+});
+buttonCustomAdviceSmall.addEventListener('click', () => {
+  total += 25;
+  updateTotalDisplay();
+});
+buttonCustomAdviceMed.addEventListener('click', () => {
+  total += 25;
+  updateTotalDisplay();
+});
+buttonCustomAdviceLarge.addEventListener('click', () => {
+  total += 25;
+  updateTotalDisplay();
+});
+
+
+
+// Update the total display element with the current total
+function updateTotalDisplay() {
+  totalDisplay.innerText = "Total: $" + total;
+}
