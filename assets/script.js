@@ -88,21 +88,21 @@ function displayImages() {
     {
       id: 1,
       title: '"Free Hope" Design Tee',
-      description: '100% Cotton',
+      description: 'One Size - 100% Cotton',
       filename: 'freeHopeShirt.jpg',
       price: 20
     },
     {
       id: 2,
       title: '"Down The Rabbit Hole..." Design Tee',
-      description: '100% Cotton',
+      description: 'One Size - 100% Cotton',
       filename: 'downRabbitHoleShirt.jpg',
       price: 20
     },
     {
       id: 3,
       title: '"Magestically Awkward" Design Tee',
-      description: '100% Cotton',
+      description: 'One Size - 100% Cotton',
       filename: 'awkwardShirt.jpg',
       price: 20
     }
@@ -128,7 +128,7 @@ function displayImages() {
     imageCointainer.appendChild(card);
 
     const button = document.createElement('button')
-    button.innerText = 'Favourite';
+    button.innerText = 'Add To Basket';
     button.setAttribute('id', 'buttonReadyMade');
 
     button.addEventListener('click', function() {

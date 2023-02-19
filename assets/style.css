@@ -207,16 +207,11 @@ header {
 
 .lead {
   font-size: 30px;
+  color: aqua;
 }
 /* card deck of ready made tshirts */
 .card-deck {
     background-color: black;
-}
-
-h3 {
-  background-color: black;
-  text-align: center;
-  font-size: xx-large;
 }
 
 .card {
@@ -240,6 +235,10 @@ h3 {
     left: 48%;
     transform: translate(-50%, -50%);
     font-family:algerian;
+  }
+
+  .display-4 {
+    font-family: Jokerman;
   }
 
   p {
@@ -344,8 +343,7 @@ h3 {
   padding-left: 50px;
   
 }
-/* 
-// tutoring  */
+
 #image-container {
   display: flex;
   width: 100%;
@@ -359,12 +357,13 @@ img {
 .orderHeader {
   height: 300px;
   text-align: center;
-
+  font-family:Jokerman ;
+font-size: 80px;
 }
 
 .saveDesigns {
-  font-size: xxx-large;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 200px;
+  
 }
 
 
@@ -410,17 +409,21 @@ h3 {
   text-align: center;
   padding-right: 100px;
   font-size: 40px;
+  font-family: Jokerman;
 }
 
  h4 {
   text-align: center;
   padding-right: 100px;
   font-size: 30px;
+  font-family:Baskerville Old Face ;
+  color: aqua;
 }
 
 a {
   text-align: center;
   font-size: 40px;
+  font-family:Baskerville Old Face ;
 }
 
 .saved-item {
