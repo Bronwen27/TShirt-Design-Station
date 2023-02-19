@@ -131,7 +131,7 @@ function displayImages() {
     button.innerText = 'Favourite'
 
     button.addEventListener('click', function() {
-      localStorage.setItem('Shirt:' + images[index].id, images[index].price)
+      localStorage.setItem('Shirt:' + images[index].id, '£' + images[index].price)
       
     const savedItems = document.getElementById('savedItems');
 
@@ -147,7 +147,7 @@ function displayImages() {
     item.appendChild(description);
 
     const price = document.createElement('a');
-    price.innerText = images[index].price;
+    price.innerText = '£' + images[index].price;
     item.appendChild(price);
 
     savedItems.appendChild(item);
@@ -236,26 +236,4 @@ document.addEventListener("DOMContentLoaded", () => {
 }
 
 // calculate total
-
-function calculateTotal() {
-  let total = 0;
-
-  for (let i = 0; i < localStorage.length; i++) {
-    const key = localStorage.key(i);
-    const value = localStorage.getItem(key);
-
-    if (value.includes('£')) {
-      const price = Number(value.replace('£', ''));
-      total += price;
-    }
-  }
-
-  const totalElement = document.getElementById('total');
-  totalElement.textContent = `Total: £${total}`;
-}
-
-// call the function to calculate and display the total
-calculateTotal();
-
-
 
