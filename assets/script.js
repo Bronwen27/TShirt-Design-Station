@@ -283,5 +283,5 @@ buttonCustomAdviceLarge.addEventListener('click', () => {
 
 // Update the total display element with the current total
 function updateTotalDisplay() {
-  totalDisplay.innerText = "Total: $" + total;
+  totalDisplay.innerText = "Total: £" + total + ".00";
 }
