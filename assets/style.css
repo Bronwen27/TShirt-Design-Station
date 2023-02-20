@@ -255,18 +255,22 @@ header {
   }
   
   .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-columns: auto auto;
-    grid-gap: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     background-color: black;
     min-height: 100%; 
-    max-width: 1000px;
-}
+    width: 100%;
+  }
+  
+  .grid-container > * {
+    flex-basis: calc(50% - 40px); 
+  }
 
 .grid-child.purple {
     background-image: url(/assets/images/Big-Tshirt);
-    background-size: 1000px;
+    background-size: 1050px;
     background-position: center;
     position: relative;
     width: 800px;
