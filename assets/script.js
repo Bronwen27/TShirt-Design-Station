@@ -132,7 +132,7 @@ function displayImages() {
     button.setAttribute('class', 'buttonReadyMade');
 
     button.addEventListener('click', function() {
-      localStorage.setItem('Shirt:' + images[index].id, '£' + images[index].price)
+      localStorage.setItem('Pre-Made Shirt Design:' + images[index].id, '£' + images[index].price)
       
     const savedItems = document.getElementById('savedItems');
 
@@ -142,10 +142,6 @@ function displayImages() {
     const title = document.createElement('h3');
     title.innerText = images[index].title;
     item.appendChild(title);
-
-    const description = document.createElement('h4');
-    description.innerText = images[index].description;
-    item.appendChild(description);
 
     const price = document.createElement('a');
     price.innerText = '£' + images[index].price;

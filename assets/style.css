@@ -265,7 +265,13 @@ header {
   }
   
   .grid-container > * {
-    flex-basis: calc(50% - 40px); 
+    flex-basis: calc(50% - 0px); /* 20px is the desired gap between the child elements */
+    margin-right: 20px; /* adds margin to the right of each child element */
+  }
+  
+  .grid-container > *:last-child {
+    margin-right: 10px; /* removes margin from the last child element */
+    flex-basis: calc(50% - 0px);
   }
 
 .grid-child.purple {
@@ -468,7 +474,7 @@ a {
 #totalDisplay {
   font-size: 80px;
   font-family:Baskerville Old Face ;
-  margin-left: 70%;
+  margin-left: 50%;
   height: 100px;
 }
 
