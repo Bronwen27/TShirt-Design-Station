@@ -402,10 +402,6 @@ button:hover {
   text-align: center;
 }
 
-.basket {
-  text-align: center;
-}
-
 h3 {
   text-align: center;
   padding-right: 100px;
@@ -429,14 +425,41 @@ a {
 
 .saved-item {
   font-size: large;
+  font-size: 80px;
+  font-family:Baskerville Old Face ;
+  margin-left: 300px;
+  height: 100px;
 }
 
 .customSinfo {
   font-size: xx-large;
 }
 
+.basket {
+  text-align: center;
+  height: 600px; 
+  overflow: auto; 
+  display: flex; 
+  flex-direction: column; 
+}
+
 #total {
   text-align: center;
   font-size: 50px;
+  height: 300px;
+}
+
+#totalPrice {
+  font-size: 80px;
+  font-family:Baskerville Old Face ;
+  margin-left: 300px;
+  height: 100px;
+}
+
+#totalDisplay {
+  font-size: 80px;
+  font-family:Baskerville Old Face ;
+  margin-left: 70%;
+  height: 100px;
 }
 
