@@ -144,7 +144,7 @@ header {
    background-image: url(/assets/images/blackWhiteLeaves.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: calc(40vh - 25px);
+    height: calc(30vh - 25px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -421,6 +421,8 @@ a {
   text-align: center;
   font-size: 40px;
   font-family:Baskerville Old Face ;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .saved-item {
@@ -428,7 +430,7 @@ a {
   font-size: 80px;
   font-family:Baskerville Old Face ;
   margin-left: 300px;
-  height: 100px;
+  height: 200px;
 }
 
 .customSinfo {
@@ -437,7 +439,7 @@ a {
 
 .basket {
   text-align: center;
-  height: 600px; 
+  height: 800px; 
   overflow: auto; 
   display: flex; 
   flex-direction: column; 
