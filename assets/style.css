@@ -438,11 +438,14 @@ a {
 }
 
 .basket {
+  background-image: url(/assets/images/tarmac.jpg);
   text-align: center;
   height: 800px; 
   overflow: auto; 
   display: flex; 
   flex-direction: column; 
+  font-family: Baskerville Old Face;
+  color:aqua
 }
 
 #total {

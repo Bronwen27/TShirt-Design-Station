@@ -129,7 +129,7 @@ function displayImages() {
 
     const button = document.createElement('button')
     button.innerText = 'Add To Basket';
-    button.setAttribute('id', 'buttonReadyMade');
+    button.setAttribute('class', 'buttonReadyMade');
 
     button.addEventListener('click', function() {
       localStorage.setItem('Shirt:' + images[index].id, '£' + images[index].price)
@@ -161,6 +161,8 @@ function displayImages() {
 }
 
 displayImages()
+
+
 
 // Advice API call Shirts
 
@@ -241,7 +243,7 @@ document.addEventListener("DOMContentLoaded", () => {
 let total = 0;
 
 // Get references to the buttons and the total display element
-var buttonReadyMade = document.getElementById('buttonReadyMade');
+//var buttonReadyMade = document.querySelectorAll('.buttonReadyMade');
 var buttonCustomQuoteSmall = document.getElementById('small');
 var buttonCustomQuoteMed = document.getElementById('medium');
 var buttonCustomQuoteLarge = document.getElementById('large');
@@ -250,9 +252,10 @@ var buttonCustomAdviceMed = document.getElementById('mediumAdvice');
 var buttonCustomAdviceLarge = document.getElementById('largeAdvice');
 
 // Add event listeners to the buttons
-buttonReadyMade.addEventListener('click', () => {
+$('.buttonReadyMade').on('click', () => {
   total += 20;
   updateTotalDisplay();
+  console.log("shirt")
 });
 buttonCustomQuoteSmall.addEventListener('click', () => {
   total += 25;
