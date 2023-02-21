@@ -14,6 +14,14 @@ This product was designed for a client starting up an independant Tshirt printin
 
 For now the application is designed only as a demo, however it has the potential to add many more design features and payment method links for the customer to make purchases with. The web-page is to be used directly by end-customers to pick their deisgn and purchase their Tshirts directly from this webpage. 
 
+## Presentation Video:
+
+![youtube thumbnail](/assets/images/PresentationThumbnail.jpg)
+
+Click link below for project presentation:
+
+https://youtu.be/9aBLAVDbEbU
+
 
 ## Usage
 
@@ -23,8 +31,6 @@ To use this app, simply open the webpage and select from the dropdown buttons th
 ![pre-made shirts](/assets/images/ScreenshotTwo%20(2).png)
 ![second page shot](/assets/images/ScreenshotThree%20(2).png)
 ![shopping basket](/assets/images/ScreenshotFour.png)
-
-## Prestentation Video:
 
 ## Deployed Link:
 
