@@ -20,10 +20,12 @@ header {
 
 .navbar {
   background-image: url(/assets/images/tarmac.jpg);
+  height: 200px
 }
 
 .nav-link {
   font-family:Matura MT Script Capitals ;
+  font-size: 80px;
 }
 
 .text-fade {
@@ -39,7 +41,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
- margin-left: 900px;
+ margin-left: 500px;
 }
 
 .text-container span {
@@ -48,7 +50,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 90px;
+  font-size: 150px;
   opacity: 0;
   color:white;
 }
@@ -257,7 +259,7 @@ header {
   .grid-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    
     align-items: center;
     background-color: black;
     min-height: 100%; 
@@ -276,7 +278,6 @@ header {
 
 .grid-child.purple {
     background-image: url(/assets/images/Big-Tshirt);
-    background-size: 1050px;
     background-position: center;
     position: relative;
     width: 800px;
