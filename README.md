@@ -16,7 +16,7 @@ For now the application is designed only as a demo, however it has the potential
 
 ## Presentation Video:
 
-![youtube thumbnail](/assets/images/PresentationThumbnail.jpg)
+![youtube thumbnail](/assets/images/youtubeThumbnail.jpg)
 
 Click link below for project presentation:
 
