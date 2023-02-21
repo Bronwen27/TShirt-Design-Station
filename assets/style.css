@@ -25,7 +25,7 @@ header {
 
 .nav-link {
   font-family:Matura MT Script Capitals ;
-  font-size: 80px;
+  font-size: 45px;
 }
 
 .text-fade {
@@ -50,7 +50,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 150px;
+  font-size: 110px;
   opacity: 0;
   color:white;
 }
@@ -267,13 +267,14 @@ header {
   }
   
   .grid-container > * {
-    flex-basis: calc(50% - 0px); /* 20px is the desired gap between the child elements */
-    margin-right: 20px; /* adds margin to the right of each child element */
+    flex-basis: calc(25% - 0px); /* 20px is the desired gap between the child elements */
+    margin-right: 100px; /* adds margin to the right of each child element */
+    margin-left: 500px;
   }
   
   .grid-container > *:last-child {
     margin-right: 10px; /* removes margin from the last child element */
-    flex-basis: calc(50% - 0px);
+    flex-basis: calc(30% - 0px);
   }
 
 .grid-child.purple {
