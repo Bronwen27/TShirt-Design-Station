@@ -1,5 +1,7 @@
 # TShirt-Design-Station
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## User Story
 
 AS a the owner of a T-shirt printing company I WANT an web-page that gives my customers inspiration for new Tshirt designs with randomly generated quotes and advice, as well as a selection of pre-made designs. I WANT my customers to be able to add the designs to their shopping basket which is also stored in local storage. The total cost of the items will be shown in the basket. 
@@ -38,5 +40,7 @@ https://bronwen27.github.io/TShirt-Design-Station/
 
 ### License 
 Licensed under the MIT license.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
