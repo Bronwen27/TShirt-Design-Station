@@ -267,13 +267,13 @@ header {
   }
   
   .grid-container > * {
-    flex-basis: calc(25% - 0px); /* 20px is the desired gap between the child elements */
-    margin-right: 100px; /* adds margin to the right of each child element */
+    flex-basis: calc(25% - 0px); 
+    margin-right: 100px; 
     margin-left: 500px;
   }
   
   .grid-container > *:last-child {
-    margin-right: 10px; /* removes margin from the last child element */
+    margin-right: 10px; 
     flex-basis: calc(30% - 0px);
   }
 
