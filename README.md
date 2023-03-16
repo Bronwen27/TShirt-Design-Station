@@ -16,6 +16,15 @@ This product was designed for a client starting up an independant Tshirt printin
 
 For now the application is designed only as a demo, however it has the potential to add many more design features and payment method links for the customer to make purchases with. The web-page is to be used directly by end-customers to pick their deisgn and purchase their Tshirts directly from this webpage. 
 
+# Table of Contents
+1. [User Story](#user-story)
+2. [Description](#description)
+3. [Presentation Video](#presentation-video)
+4. [Usage](#usage)
+5. [Deployed Link](#deployed-link)
+6. [License](#license)
+7. [Further Work](#further-work)
+
 ## Presentation Video:
 
 ![youtube thumbnail](/assets/images/youtubeThumbnail.jpg)
@@ -42,5 +51,9 @@ https://bronwen27.github.io/TShirt-Design-Station/
 Licensed under the MIT license.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Further Work
+
+If you are interested in viewing more of my work, please see my github page at: https://github.com/Bronwen27
 
 
